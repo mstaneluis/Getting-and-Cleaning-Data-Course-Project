@@ -18,10 +18,12 @@ Create one R script called run_analysis.R that does the following.
 
 ## Files
 There are 3 files in this project: `README.md`, `CodeBook.md` and `run_analysis.R`
-`README.md` (this file) describes the repositoyr contents
-`CodeBook.md` describes the variables, the data, and any transformations or work that was performed to clean up the data.
-`run_analysis.R` contains all the code to perform the analyses described in the 5 steps. They can be launched in RStudio by just sourcing the file.
+* `README.md` (this file) describes the repositoyr contents
+* `CodeBook.md` describes the variables, the data, and any transformations or work that was performed to clean up the data.
+* `run_analysis.R` contains all the code to perform the analyses described in the 5 steps. They can be launched in RStudio by just sourcing the file.
+
 NOTES:
+
 * Prior to execution of `run_analysis.R`, the user should set their working directory (setwd()) to the location the `run_analysis.R` is located.
 * The code will download and unzip all the data necessary to perform operations.
 * The output of the 5th step will be called `averages_tidy_data.txt`.
