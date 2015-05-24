@@ -58,13 +58,23 @@ There are 6 parts (1-5 are directives of the Project Objective):
 
 * Load plyr library
 * using download.file, Downloads and Unzips the dataset
+..* variables: fileURL, destination
 * using read.table, Read each training and test table into individual data frames
+..* variables: Xtrain, Ytrain, subjectTrain, Xtest, Ytest, subjectTest
 * Using rbind, Combine 'like' data frames together (x, y, subject)
+..* variables: Xtrain, Ytrain, subjectTrain, Xtest, Ytest, subjectTest, Xdata, Ydata, subjectData
 * using read.table,Read the features table into a data frame
+..* variable: features
 * Subset the X data frame for only mean and std values
-* * correct column names
+..* variables: features, meanAndStdFeatures, Xdata
+..* correct column names
 * using read.table, Read the activity tabel into a data frame
+..* variable: activities
 * Make the activity value human readable 
+..* variables: activities, Ydata
 * using cbind, combine all data frames into 1 frame
+..* variables: allData, Xdata, Ydata, subjectData
 * using ddply, create a new tidy set with the average of each variable for each activity and each subject appended
+..* variables: allData, averagesData
 * using write.table, write tidy data frame to `averages_tidy_data.txt`, minus row names.
+..* variable: averagesData
